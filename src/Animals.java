@@ -13,17 +13,18 @@ public abstract class Animals {
         this.healthPts = healthPts;
     }
 
-    protected Animals(int attack, int defense, int regen) {
+    Animals(int attack, int defense, int regen) {
         this.healthPts = 100;
         this.attack = attack;
         this.defense = defense;
         this.regen = regen;
     }
 
-
-
     public abstract int special(int InitialStat);
 
-    public abstract int attack(Animals animals);
+    public abstract int attack(Animals opponent);
+   // public int defend(Animals animals);
+    //public int heal(Animals animals);
+
 
 }

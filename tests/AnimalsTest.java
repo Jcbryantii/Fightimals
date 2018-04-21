@@ -68,4 +68,10 @@ public class AnimalsTest {
 
        assertEquals(93,lion.attack(lion));
     }
+
+    @Test
+    public void testFigtimalsGamegetInput(){
+        FightimalsGame game = new FightimalsGame();
+        game.startGame();
+    }
 }
